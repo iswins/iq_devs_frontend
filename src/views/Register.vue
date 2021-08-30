@@ -11,7 +11,7 @@
         <form>
           <div class="mb-3">
             <label for="companyInn">INN</label>
-            <input type="number" class="form-control" v-model="form.inn" id="companyInn" placeholder="Email">
+            <input type="number" class="form-control" v-model="form.inn" id="companyInn" placeholder="INN">
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1">Email address</label>
