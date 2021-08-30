@@ -14,10 +14,11 @@ services:
             - ../.env
         working_dir: /app
         ports:
-            - "7100:8080"
+            - "7100:80"
             - "7101:8081"
         volumes:
             - ../:/app
+            - ./conf.d/:/etc/nginx/conf.d/
         networks:
             - iq_devs_frontend-network
 
