@@ -34,7 +34,16 @@
                     <input type="number" min="100000" max="100000000" class="form-control" id="amount" v-model="form.amount" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
-                    <label for="term">Term (months)</label>
+                    <label for="term">Term</label>
+                    <select class="form-select form-select-lg mb-3" v-model="form.term" aria-label=".form-select-lg example">
+                      <option selected>Select load term</option>
+                      <option value="12">12 months</option>
+                      <option value="24">24 months</option>
+                      <option value="36">36 months</option>
+                      <option value="48">48 months</option>
+                      <option value="60">60 months</option>
+                    </select>
+
                     <input type="number" min="1" max="120" class="form-control" v-model="form.term" id="term">
                   </div>
                   <button type="submit" v-if="!process" @click="newOrder" class="btn btn-primary">Create</button>
